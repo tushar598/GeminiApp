@@ -49,12 +49,25 @@
 }
 
 .main .card {
+  position: relative;
+  z-index: 1;
   height: 150px;
   padding: 0.2em 0.5em;
   background-color: #f0f4f9;
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+}
+
+.main .card::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, #ede4eb, #d8d8d9);
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0.6;
+  border-radius: 10px;
 }
 
 .main .card img {
@@ -73,7 +86,7 @@
 }
 
 .main .card:hover {
-  background-color: #dfe4ea;
+  background-color: #c1c3c5;
 }
 
 .main-bottom {
@@ -220,7 +233,7 @@
 @media (max-width: 600px) {
   .main-bottom input {
     flex: none;
-    width: 150px;
+    max-width: 15em;
   }
 
   .main-bottom img {

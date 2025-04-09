@@ -36,6 +36,10 @@
   color:#f5f5f5;
 }
 
+.app.dark .main .card::before{
+  background: linear-gradient(16deg, #4b90ff, #ff5546);
+}
+
 
 
 @keyframes fadeIn {
