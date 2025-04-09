@@ -13,6 +13,8 @@ import message_icon from "./message_icon.png";
 import code_icon from "./code_icon.png";
 import send_icon from "./send_icon.png";
 import gemini_icon from "./gemini_icon.png";
+import moon_icon from "./moon.png";
+import sun_icon from "./sun.png";
 
 export const assets = {
   history_icon,
@@ -30,4 +32,6 @@ export const assets = {
   code_icon,
   send_icon,
   gemini_icon,
+  moon_icon,
+  sun_icon,
 };

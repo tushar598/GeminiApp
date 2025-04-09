@@ -2,9 +2,12 @@ import React, { useContext, useState } from "react";
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
+import { ThemeContext } from "../../context/ThemeContext";
+
 
 const Sidebar = () => {
   const [extended, setExtended] = useState(false);
+  
 
   const { onSent, prevPrompt, setRecentPrompt, newChat } = useContext(Context);
 
@@ -17,6 +20,7 @@ const Sidebar = () => {
     <div className="sidebar">
       {/* Top bar div */}
       <div className="top">
+      
         {/* menu icon */}
         <img
           onClick={() => setExtended((prev) => !prev)}

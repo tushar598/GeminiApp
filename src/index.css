@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit";
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 #root {
@@ -11,6 +13,30 @@
   height: 100vh;
   animation: fadeIn 1.5s;
 }
+
+.app {
+  display: flex;
+  width: 100%;
+
+}
+
+.app.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  transition: all 1s ease, color 0.3s ease;
+ 
+}
+
+.app.dark .sidebar,
+.app.dark .main {
+  background-color: #2a2a2a;
+}
+
+.app.dark .main .nav p{
+  color:#f5f5f5;
+}
+
+
 
 @keyframes fadeIn {
   0% {
