@@ -20,7 +20,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>Gemini✨</p>
+        <p onClick={()=>window.location.reload()}>Gemini✨</p>
         <div className="img">
         <img
           onClick={toggleTheme}
