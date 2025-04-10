@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useContext } from "react";
-import Sidebar from "./components/SideBar/Sidebar";
+import Sidebar from "./Components/SideBar/Sidebar";
 import ThemeProvider, { ThemeContext } from "./context/ThemeContext";
 import Main from "./Components/Main/Main";
 
