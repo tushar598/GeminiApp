@@ -27,7 +27,14 @@
  
 }
 
-.app.dark .sidebar,
+.app.dark .sidebar{
+  background-color: #212020;
+}
+
+.app.dark .sidebar .recent-entry{
+  color: #fff;
+} 
+
 .app.dark .main {
   background-color: #2a2a2a;
 }
